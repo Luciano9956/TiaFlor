@@ -1,0 +1,16 @@
+@import "../bootstrap/scss/bootstrap";
+@import "nosotros.scss";
+@import "body.scss";
+@import "galeria.scss";
+@import "mixin.scss";
+@import "media.scss";
+@import "navbar.scss";
+
+.img-f {
+    max-width: 250px;
+    max-height: 2000px;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+}

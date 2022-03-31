@@ -1,0 +1,57 @@
+.titulo_g{
+    text-align: center;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #ff7ec3;
+    font-size: 2.4rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(6, 133px);
+    grid-auto-rows: 200px;
+    gap: 1rem;
+    justify-content: center;
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+.galeria__box{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    grid-column: span 2;
+    height: 275px;
+    transition: 1s;
+}
+
+.galeria__box:first-of-type{
+    grid-column: 2 / span 2;
+}
+
+.galeria__box:hover{
+    transform: scale(1.1);
+}
+
+.img_galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width:150px) and (max-width:1007px){
+
+    .galeria__box:first-of-type{
+        grid-column: 1 / span 2;
+    }
+    
+    .galeria{
+        grid-auto-rows: 283px;
+        grid-template-columns: repeat(auto-fit, 133px);
+    
+    }
+}

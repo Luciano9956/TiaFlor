@@ -1,0 +1,84 @@
+@mixin boton {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+    padding: 8px 10px;
+    background-color: #ff9ed2;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.boton {
+    @include boton;
+}
+
+.boton:hover {
+    color:#ffffff;
+    background-color: #c7c7c77e;
+}
+
+.img-icon{
+    height: 50px;
+    width: 50px;
+    margin-left: 50%;
+}
+
+.box-pad{
+    margin: 2px;
+}
+
+.con-tml{
+    height: 720px;
+    width: 500px;
+    margin: auto;
+}
+
+.con-tml2 {
+    height: auto;
+    width: 500px;
+    margin: auto;
+}
+
+.glass2{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.ser-up{
+    margin-bottom: 200px;
+}
+
+.box-serv{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+.box-serv2{
+    position: absolute;
+    bottom: 38%;
+    left: 10%;
+    right: 10%;
+}
+
+.ico-ser{
+    margin: 0;
+}
+.ico-ser2{
+    margin-right: 50%;
+}
+
+.p-s{
+    text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff;
+}
+
+.zdex{
+    position: relative;
+    z-index: -5;
+}
